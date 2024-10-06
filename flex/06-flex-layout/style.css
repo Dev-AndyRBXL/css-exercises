@@ -1,3 +1,4 @@
+/* Mine:
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -5,6 +6,89 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 29.3vh 0;
+}
+
+.content .logo {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 600px;  
+}
+
+.content .input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.content .input input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+}
+
+.content .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.content .buttons button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  margin: 2px;
+  padding: 6px 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background: #eee;
+}
+
+.footer {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 12px;
+  list-style: none;
+}
+
+.left-links li a,
+.right-links li a {
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+}
+*/
+
+/* SOLUTION */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +100,16 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
 input {
@@ -23,4 +117,28 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background: #eee;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
 }
